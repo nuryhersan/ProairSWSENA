@@ -39,137 +39,38 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="labelNumeroIdentidad" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelTipoident" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelNombre" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="textField1iden" min="-2" pref="202" max="-2" attributes="0"/>
-                                      <EmptySpace pref="206" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="textField1Nombre" pref="167" max="32767" attributes="0"/>
-                                          <Component id="textField2Apellido" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="tex2Nombre" min="-2" pref="162" max="-2" attributes="0"/>
-                                          <Component id="textField1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="button1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="label1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
+              <Component id="jLabel1identificacion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="jTextField1iden" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="433" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="textField1iden" min="-2" max="-2" attributes="0"/>
-                  <Component id="labelNumeroIdentidad" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1identificacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField1iden" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Component id="labelTipoident" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="labelNombre" min="-2" max="-2" attributes="0"/>
-                          <Component id="textField1Nombre" min="-2" max="-2" attributes="0"/>
-                          <Component id="tex2Nombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                              <Component id="label1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Component id="textField2Apellido" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="218" max="32767" attributes="0"/>
-              <Component id="button1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <EmptySpace pref="436" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="java.awt.Label" name="labelNumeroIdentidad">
+    <Component class="javax.swing.JLabel" name="jLabel1identificacion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Numero Identificacion"/>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
     </Component>
-    <Component class="java.awt.TextField" name="textField1iden">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1idenActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="java.awt.Button" name="button1">
+    <Component class="javax.swing.JTextField" name="jTextField1iden">
       <Properties>
-        <Property name="label" type="java.lang.String" value="Registrar"/>
+        <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button1ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="java.awt.Label" name="labelTipoident">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tipo Identificacion"/>
-      </Properties>
-    </Component>
-    <Component class="java.awt.Label" name="labelNombre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nombres"/>
-      </Properties>
-    </Component>
-    <Component class="java.awt.TextField" name="textField1Nombre">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1NombreActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="java.awt.Label" name="label1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Apellidos"/>
-      </Properties>
-    </Component>
-    <Component class="java.awt.TextField" name="textField2Apellido">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField2ApellidoActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="java.awt.TextField" name="tex2Nombre">
-    </Component>
-    <Component class="java.awt.TextField" name="textField1">
     </Component>
   </SubComponents>
 </Form>
