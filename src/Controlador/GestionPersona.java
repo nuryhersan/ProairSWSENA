@@ -15,7 +15,7 @@ import java.util.Objects;
  */
 public class GestionPersona implements OperacionCrudpersona {
 
-    ArrayList<Persona> registroPersona;
+    private static ArrayList<Persona> registroPersona;
 
     public GestionPersona() {
         registroPersona = new ArrayList<>();
