@@ -37,7 +37,7 @@ public class InterfazCliente extends javax.swing.JFrame {
         javax.swing.JLabel jLabel2Apellido = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1iden.setText("Numero Identificacion");
 

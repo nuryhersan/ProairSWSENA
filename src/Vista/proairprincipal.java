@@ -28,27 +28,65 @@ public class proairprincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.JLabel jLabel1Imagen = new javax.swing.JLabel();
         javax.swing.JLabel jLabel1Titulo = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel1Imagen = new javax.swing.JLabel();
         javax.swing.JLabel jLabel1fondo = new javax.swing.JLabel();
+        javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
+        javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
+        javax.swing.JMenuItem jMenuItem1 = new javax.swing.JMenuItem();
+        javax.swing.JMenu jMenu2 = new javax.swing.JMenu();
+        javax.swing.JMenu jMenu4 = new javax.swing.JMenu();
+        javax.swing.JMenuItem jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1Titulo.setFont(new java.awt.Font("Papyrus", 1, 18)); // NOI18N
+        jLabel1Titulo.setText(" BIENVENIDO AQUI SE LE TIENE LA FRAGANCIA QUE DESEE CON LARGA DURACION");
+        getContentPane().add(jLabel1Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
+
         jLabel1Imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/IMG-20171023-WA0022.jpg"))); // NOI18N
         jLabel1Imagen.setText("jLabel1");
-        getContentPane().add(jLabel1Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 780, 550));
-
-        jLabel1Titulo.setText(" BIENVENIDO AQUI SE LE TIENE LA FRAGANCIA QUE DESEE CON LARGA DURACION");
-        getContentPane().add(jLabel1Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
+        getContentPane().add(jLabel1Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 820, 550));
 
         jLabel1fondo.setBackground(new java.awt.Color(0, 0, 102));
         jLabel1fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.jpg"))); // NOI18N
-        jLabel1fondo.setText("jLabel1");
-        getContentPane().add(jLabel1fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, -1, -1));
+        getContentPane().add(jLabel1fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 560));
+
+        jMenu1.setText("Archivo");
+
+        jMenuItem1.setText("Salir");
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Administración");
+
+        jMenu4.setText("Contabilidad");
+
+        jMenuItem2.setText("Administración de Clientes");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem2);
+
+        jMenu2.add(jMenu4);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        InterfazCliente ifc= new InterfazCliente();
+        ifc.setLocationRelativeTo(null);
+        ifc.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
