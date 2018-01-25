@@ -46,12 +46,12 @@ public class ProAirPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1Titulo.setFont(new java.awt.Font("Papyrus", 1, 18)); // NOI18N
-        jLabel1Titulo.setText(" BIENVENIDO AQUI SE LE TIENE LA FRAGANCIA QUE DESEE CON LARGA DURACION");
-        getContentPane().add(jLabel1Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
+        jLabel1Titulo.setText(" BIENVENIDO AQUI   LA FRAGANCIA QUE DESEE CON LARGA DURACION");
+        getContentPane().add(jLabel1Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, -1, -1));
 
         jLabel1Imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/IMG-20171023-WA0022.jpg"))); // NOI18N
         jLabel1Imagen.setText("jLabel1");
-        getContentPane().add(jLabel1Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -40, 990, 590));
+        getContentPane().add(jLabel1Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 990, 590));
 
         jLabel1fondo.setBackground(new java.awt.Color(0, 0, 102));
         jLabel1fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.jpg"))); // NOI18N
@@ -60,6 +60,11 @@ public class ProAirPrincipal extends javax.swing.JFrame {
         jMenu1.setText("Archivo");
 
         jMenuItem1.setText("Salir");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
@@ -108,6 +113,10 @@ PersonaTercerosGUI pt = new PersonaTercerosGUI();
         rp.setLocationRelativeTo(null);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
