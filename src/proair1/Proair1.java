@@ -5,6 +5,8 @@
  */
 package proair1;
 
+import Vista.ProAirPrincipal;
+
 /**
  *
  * @author LENOVO
@@ -15,7 +17,9 @@ public class Proair1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ProAirPrincipal pap = new ProAirPrincipal();
+        pap.setVisible(true);
+        pap.setLocationRelativeTo(null);
     }
     
 }
