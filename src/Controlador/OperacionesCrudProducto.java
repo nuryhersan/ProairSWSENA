@@ -6,6 +6,7 @@
 package Controlador;
 
 
+import Modelo.Producto;
 import java.util.ArrayList;
 
 /**
