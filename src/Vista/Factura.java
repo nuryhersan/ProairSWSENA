@@ -338,6 +338,11 @@ public class Factura extends javax.swing.JFrame {
         jCheckBox1.setText("Descuento(%)");
 
         jTextField17.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField17ActionPerformed(evt);
+            }
+        });
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel15.setText("Valor Total:");
@@ -450,6 +455,10 @@ public class Factura extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_botonBuscarActionPerformed
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
 
     /**
      * @param args the command line arguments
