@@ -270,6 +270,11 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
         comboDeptoSuc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione el Departamento de Sede" }));
 
         comboMunipioSuc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Municipio de Sede" }));
+        comboMunipioSuc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboMunipioSucActionPerformed(evt);
+            }
+        });
 
         jLabel21.setText("Ciudad/Municipio:");
 
@@ -574,6 +579,10 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
         rp.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_regBuscarRegalActionPerformed
+
+    private void comboMunipioSucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMunipioSucActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboMunipioSucActionPerformed
 
     /**
      * @param args the command line arguments
