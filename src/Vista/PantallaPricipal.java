@@ -5,6 +5,7 @@
  */
 package Vista;
 
+import Modelo.Descripcion;
 import static java.lang.reflect.Array.set;
 
 /**
@@ -30,6 +31,7 @@ public class PantallaPricipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        javax.swing.JMenuItem jMenuItem1 = new javax.swing.JMenuItem();
         javax.swing.JLabel jLabel1fondo = new javax.swing.JLabel();
         javax.swing.JLabel jLabel1Imagenprin1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2IImagenpanprin2 = new javax.swing.JLabel();
@@ -38,9 +40,12 @@ public class PantallaPricipal extends javax.swing.JFrame {
         javax.swing.JLabel jLabel1ImagenHoriz = new javax.swing.JLabel();
         javax.swing.JLabel jLabel1ImagprinHoriz = new javax.swing.JLabel();
         javax.swing.JMenuBar jMenuBar1Salir = new javax.swing.JMenuBar();
-        javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
-        javax.swing.JMenu jMenu2 = new javax.swing.JMenu();
-        javax.swing.JMenu jMenu3 = new javax.swing.JMenu();
+        javax.swing.JMenu jMenu1salir = new javax.swing.JMenu();
+        javax.swing.JMenu jMenu2descripcion = new javax.swing.JMenu();
+        javax.swing.JMenuItem jMenuItem1Inventario = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem jMenuItem2factura = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,20 +78,55 @@ public class PantallaPricipal extends javax.swing.JFrame {
         jLabel1ImagprinHoriz.setText("jLabel1");
         getContentPane().add(jLabel1ImagprinHoriz, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 410, 210, 300));
 
-        jMenu1.setText("SALIR");
-        jMenuBar1Salir.add(jMenu1);
+        jMenu1salir.setText("SALIR");
+        jMenuBar1Salir.add(jMenu1salir);
 
-        jMenu2.setText("DESCRIPCION DEL PRODUCTO");
+        jMenu2descripcion.setText("DESCRIPCION DEL PRODUCTO");
+        jMenu2descripcion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2descripcionMouseClicked(evt);
+            }
+        });
 
-        jMenu3.setText("FACTURA");
-        jMenu2.add(jMenu3);
+        jMenuItem1Inventario.setText("INVENTARIO");
+        jMenuItem1Inventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1InventarioActionPerformed(evt);
+            }
+        });
+        jMenu2descripcion.add(jMenuItem1Inventario);
 
-        jMenuBar1Salir.add(jMenu2);
+        jMenuItem2factura.setText("Factura");
+        jMenuItem2factura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2facturaActionPerformed(evt);
+            }
+        });
+        jMenu2descripcion.add(jMenuItem2factura);
+
+        jMenuBar1Salir.add(jMenu2descripcion);
 
         setJMenuBar(jMenuBar1Salir);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem1InventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1InventarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1InventarioActionPerformed
+
+    private void jMenuItem2facturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2facturaActionPerformed
+        Factura f = new Factura();
+        f.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jMenuItem2facturaActionPerformed
+
+    private void jMenu2descripcionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2descripcionMouseClicked
+        // TODO add your handling code here:
+        Descripcion a = new Descripcion ();
+        a.setvisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jMenu2descripcionMouseClicked
 
     /**
      * @param args the command line arguments
@@ -119,6 +159,7 @@ public class PantallaPricipal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new PantallaPricipal().setVisible(true);
+                
             }
         });
     }
