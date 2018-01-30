@@ -30,13 +30,7 @@ public class GestionPersona implements OperacionCrudpersona {
 
     @Override
     public Boolean actualizarPersona(Persona p) {
-        for (int i = 0; i<registroPersona.size();i++){
-         if(registroPersona.get(i).getNumiden().equals(p.getNumiden())) {
-             registroPersona.set(i, p);
-             return true;
-         }  
-        }
-       return false; 
+        return true;
     }
 
     @Override 
