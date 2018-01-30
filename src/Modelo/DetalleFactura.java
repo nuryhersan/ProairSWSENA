@@ -14,8 +14,8 @@ public class DetalleFactura {
     private Integer Factura_idFactura;
     private Integer producto_idProducto;
     private Integer cant;
-    private float precioUnit;
-    private float subTotal;
+    private double precioUnit;
+    private double subTotal;
 
     public DetalleFactura() {
     }
