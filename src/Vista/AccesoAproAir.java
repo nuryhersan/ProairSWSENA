@@ -95,6 +95,11 @@ public class AccesoAproAir extends javax.swing.JFrame {
                 jButton1IniciarMouseClicked(evt);
             }
         });
+        jButton1Iniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1IniciarActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1Iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         Labfondo.setBackground(new java.awt.Color(102, 102, 255));
@@ -139,6 +144,14 @@ public class AccesoAproAir extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jBuSalirActionPerformed
+
+    private void jButton1IniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IniciarActionPerformed
+
+        // TODO add your handling code here:
+        PantallaPricipal p = new PantallaPricipal();
+        p.setVisible(true);
+        JOptionPane.showMessageDialog(null, "Hola has iniciado sesion;");
+    }//GEN-LAST:event_jButton1IniciarActionPerformed
 
     /**
      * @param args the command line arguments
