@@ -11,33 +11,57 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1salir">
           <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder>
+                  <Color PropertyName="shadowOuter" blue="ff" green="99" red="33" type="rgb"/>
+                </BevelBorder>
+              </Border>
+            </Property>
             <Property name="text" type="java.lang.String" value="SALIR"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2descripcion">
           <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="0" red="0" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
             <Property name="text" type="java.lang.String" value="DESCRIPCION DEL PRODUCTO"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu2descripcionMouseClicked"/>
           </Events>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1Inventario">
+            <Menu class="javax.swing.JMenu" name="Menufactura">
               <Properties>
-                <Property name="text" type="java.lang.String" value="INVENTARIO"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1InventarioActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2factura">
-              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                    <MatteColorBorder>
+                      <Color PropertyName="color" blue="ff" green="33" red="33" type="rgb"/>
+                    </MatteColorBorder>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Factura"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2facturaActionPerformed"/>
-              </Events>
-            </MenuItem>
+              <SubComponents>
+                <Menu class="javax.swing.JMenu" name="MenuStock">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                        <MatteColorBorder>
+                          <Color PropertyName="color" blue="99" green="66" red="0" type="rgb"/>
+                        </MatteColorBorder>
+                      </Border>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Stock"/>
+                  </Properties>
+                </Menu>
+              </SubComponents>
+            </Menu>
           </SubComponents>
         </Menu>
       </SubComponents>

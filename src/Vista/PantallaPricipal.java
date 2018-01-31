@@ -42,8 +42,8 @@ public class PantallaPricipal extends javax.swing.JFrame {
         javax.swing.JMenuBar jMenuBar1Salir = new javax.swing.JMenuBar();
         javax.swing.JMenu jMenu1salir = new javax.swing.JMenu();
         javax.swing.JMenu jMenu2descripcion = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem1Inventario = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem2factura = new javax.swing.JMenuItem();
+        javax.swing.JMenu Menufactura = new javax.swing.JMenu();
+        javax.swing.JMenu MenuStock = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -78,9 +78,11 @@ public class PantallaPricipal extends javax.swing.JFrame {
         jLabel1ImagprinHoriz.setText("jLabel1");
         getContentPane().add(jLabel1ImagprinHoriz, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 410, 210, 300));
 
+        jMenu1salir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(51, 153, 255)));
         jMenu1salir.setText("SALIR");
         jMenuBar1Salir.add(jMenu1salir);
 
+        jMenu2descripcion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
         jMenu2descripcion.setText("DESCRIPCION DEL PRODUCTO");
         jMenu2descripcion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -88,21 +90,14 @@ public class PantallaPricipal extends javax.swing.JFrame {
             }
         });
 
-        jMenuItem1Inventario.setText("INVENTARIO");
-        jMenuItem1Inventario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1InventarioActionPerformed(evt);
-            }
-        });
-        jMenu2descripcion.add(jMenuItem1Inventario);
+        Menufactura.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 51, 255)));
+        Menufactura.setText("Factura");
 
-        jMenuItem2factura.setText("Factura");
-        jMenuItem2factura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2facturaActionPerformed(evt);
-            }
-        });
-        jMenu2descripcion.add(jMenuItem2factura);
+        MenuStock.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 153)));
+        MenuStock.setText("Stock");
+        Menufactura.add(MenuStock);
+
+        jMenu2descripcion.add(Menufactura);
 
         jMenuBar1Salir.add(jMenu2descripcion);
 
@@ -110,16 +105,6 @@ public class PantallaPricipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem1InventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1InventarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1InventarioActionPerformed
-
-    private void jMenuItem2facturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2facturaActionPerformed
-        Factura f = new Factura();
-        f.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jMenuItem2facturaActionPerformed
 
     private void jMenu2descripcionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2descripcionMouseClicked
         // TODO add your handling code here:
