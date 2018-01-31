@@ -6,7 +6,8 @@
 package proair1;
 
 import Vista.ProAirPrincipal;
-
+import Controlador.GestionPersona;
+import java.util.Scanner;
 /**
  *
  * @author LENOVO

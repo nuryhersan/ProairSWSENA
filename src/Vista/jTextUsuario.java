@@ -3,19 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
+package Vista;
 
 /**
  *
  * @author LENOVO
  */
-public class PantallaPrincipal {
+class jTextUsuario {
 
-    public void setVisible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setvisible(boolean b) {
+    static Object getText() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
