@@ -102,6 +102,7 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
         javax.swing.JButton jButton4 = new javax.swing.JButton();
         javax.swing.JCheckBox checkProv = new javax.swing.JCheckBox();
         javax.swing.JCheckBox checkCliente = new javax.swing.JCheckBox();
+        javax.swing.JButton jButModificar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(892, 630));
@@ -482,6 +483,8 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
 
         checkCliente.setText("Es Cliente");
 
+        jButModificar.setText("Limpiar");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -498,18 +501,21 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRegistrar)
-                            .addComponent(btnModificar))
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(checkProv)
                         .addGap(18, 18, 18)
                         .addComponent(checkCliente)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnRegistrar)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(btnModificar)
+                                .addGap(90, 90, 90)
+                                .addComponent(jButModificar)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -533,7 +539,9 @@ public class PersonaTercerosGUI extends javax.swing.JFrame {
                         .addGap(4, 4, 4)
                         .addComponent(btnRegistrar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnModificar)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnModificar)
+                            .addComponent(jButModificar))
                         .addGap(12, 12, 12)))
                 .addContainerGap())
         );
